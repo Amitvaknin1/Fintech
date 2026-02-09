@@ -28,10 +28,10 @@
 
         <form id="login-form" aria-label="Login form">
           <label for="email">כתובת אימייל</label>
-          <input type="email" id="email" name="email" placeholder="name@example.com" required>
+          <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required>
 
           <label for="password">סיסמה</label>
-          <input type="password" id="password" name="password" placeholder="לפחות 8 תווים" required>
+          <input type="password" id="password" name="password" placeholder="לפחות 8 תווים" minlength="8" autocomplete="current-password" required>
 
           <div class="form-row">
             <label class="checkbox"><input type="checkbox" name="remember"> זכור אותי</label>
