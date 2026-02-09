@@ -92,13 +92,8 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
 }
-
-#login-btn a{
-   text-decoration: none;
-   color: inherit;
-}
-
 #login-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
