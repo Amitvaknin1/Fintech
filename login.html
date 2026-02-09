@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <title>התחברות - DollarTrack AI</title>
+</head>
+<body>
+  <header id="auth-header">
+    <a href="/" id="auth-logo-link" aria-label="Back to home">
+      <img id="auth-logo" src="assets/logo.svg?v=2" alt="DollarTrack AI" width="160" height="44">
+    </a>
+  </header>
+
+  <main id="auth-main">
+    <section id="auth-card">
+      <div id="auth-form-area">
+        <h1>התחבר כעת</h1>
+        <p class="muted">הכנס את פרטי הכניסה כדי לגשת לחשבונך</p>
+
+        <div id="social-logins">
+          <button class="social-btn google">התחבר עם Google</button>
+          <button class="social-btn apple">התחבר עם Apple</button>
+        </div>
+
+        <div class="divider"><span>או</span></div>
+
+        <form id="login-form" aria-label="Login form">
+          <label for="email">כתובת אימייל</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+
+          <label for="password">סיסמה</label>
+          <input type="password" id="password" name="password" placeholder="לפחות 8 תווים" minlength="8" autocomplete="current-password" required>
+
+          <div class="form-row">
+            <label class="checkbox"><input type="checkbox" name="remember"> זכור אותי</label>
+            <a href="/forgot-password" class="forgot">שכחת סיסמה?</a>
+          </div>
+
+          <button type="submit" id="login-submit">התחברות</button>
+
+          <p class="muted small">אין לך חשבון? <a href="/signup">הרשם</a></p>
+        </form>
+      </div>
+
+      <aside id="auth-promo">
+        <div class="promo-inner">
+          <h2>ניהול פיננסי חכם ופשוט</h2>
+          <p class="muted">עקוב אחרי שערי מט"ח, קבל תחזיות AI וחבר בנקים בבטחה — הכל במקום אחד.</p>
+
+          <div class="promo-image">
+            <img src="https://placehold.co/600x360/667eea/ffffff?text=Dashboard+Preview" alt="תצוגת לוח בקרה" loading="lazy" />
+          </div>
+
+          <div class="partners muted">
+            <span>Trusted by</span>
+            <div class="logos">
+              <span>Booking.com</span>
+              <span>Google</span>
+              <span>Spotify</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer id="auth-footer">
+    <p class="muted">&copy; 2026 DollarTrack AI</p>
+  </footer>
+</body>
+</html>
