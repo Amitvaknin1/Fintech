@@ -532,71 +532,63 @@ html[dir="rtl"] .plan:hover .plan-footer{ transform: translateX(-8px); }
 @media (max-width: 1024px){ .plans-grid{ grid-template-columns: repeat(2,1fr); } }
 @media (max-width: 640px){ .plans-grid{ grid-template-columns: 1fr; } }
 
-/* ==========================
-     Auth / Login page styles
-     ========================== */
+/* =====================================
+   TRUSTED BY - logo strip (ADD ONLY)
+   ===================================== */
 
-#auth-header{ padding: 1rem 5%; }
-#auth-logo { display: block; }
-
-#auth-main{ display:block; padding:2rem 5%; background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent); min-height: calc(100vh - 140px); }
-
-#auth-card{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
-    align-items: center;
+#trusted-by{
+    padding: 3.5rem 5%;
+    background: rgba(255,255,255,0.10);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.18);
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+    text-align: center;
 }
 
-#auth-form-area{ background: #fff; padding: 2.25rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(2,6,23,0.06); direction: rtl; text-align: right; }
-#auth-form-area h1{ font-size: 1.75rem; margin-bottom: 0.25rem; color: #0b1220 }
-#auth-form-area .muted{ color: #64748b }
-
-#social-logins{ display:flex; gap:0.75rem; margin:1rem 0 0.5rem; }
-.social-btn{ flex:1; padding:0.65rem 0.9rem; border-radius:10px; border:1px solid #e6e9ef; background:white; cursor:pointer }
-.social-btn.google{ background: #fff; }
-.social-btn.apple{ background:#fff }
-
-.divider{ display:flex; align-items:center; gap:1rem; margin:1rem 0; }
-.divider span{ background:#fff; padding:0 .75rem; color:#64748b }
-.divider:before{ content:''; flex:1; height:1px; background:#e6e9ef }
-
-#login-form label{ display:block; margin-top:0.75rem; font-size:0.95rem; color:#374151 }
-#login-form input{ width:100%; padding:0.75rem; border:1px solid #e6e9ef; border-radius:8px; margin-top:0.35rem }
-
-.form-row{ display:flex; justify-content:space-between; align-items:center; margin:0.5rem 0; }
-.checkbox input{ margin-left:0.5rem }
-.forgot{ color:#3b82f6; text-decoration:underline; text-underline-offset:3px }
-
-#login-submit{
-    width: 100%;
-    /* Responsive padding: vertical then horizontal */
-    padding: clamp(0.6rem, 1.6vw, 1rem) clamp(0.8rem, 3vw, 1.4rem);
-    margin-top: 0.75rem;
-    background: linear-gradient(135deg,#667eea,#764ba2);
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+#trusted-by .trusted-label{
+    color: rgba(255,255,255,0.92);
     font-weight: 700;
-    font-size: clamp(0.98rem, 1.6vw, 1.05rem);
-    transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
+    letter-spacing: 0.2px;
+    margin-bottom: 1.25rem;
+    text-shadow: 0 2px 14px rgba(0,0,0,0.18);
 }
 
-#auth-promo{ border-radius:12px; padding:2rem; background: linear-gradient(180deg,#3b82f63b,#6d28d91a); }
-#auth-promo .promo-inner{ background: linear-gradient(90deg,#667eea 0%, #764ba2 100%); color:#fff; padding:2rem; border-radius:12px }
-#auth-promo h2{ font-size:1.6rem; margin-bottom:0.5rem }
-#auth-promo .muted{ opacity:0.9 }
-#auth-promo .promo-image img{ width:100%; border-radius:8px; display:block; margin-top:1rem }
-
-.partners{ margin-top:1.25rem; display:flex; flex-direction:column; gap:0.75rem }
-.partners .logos{ display:flex; gap:1rem; align-items:center }
-
-#auth-footer{ text-align:center; padding:2rem 0; }
-
-@media (max-width: 900px){
-    #auth-card{ grid-template-columns: 1fr; padding:0 1rem }
-    #auth-promo{ order: -1 }
+#trusted-by .trusted-logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 1.25rem;
 }
+
+#trusted-by .trusted-logo{
+    padding: 0.9rem 1.25rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.92);
+    color: #2d3748;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    border: 1px solid rgba(255,255,255,0.35);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    opacity: 0.85;
+    filter: grayscale(1);
+    transition: transform 0.25s ease, opacity 0.25s ease, filter 0.25s ease;
+}
+
+#trusted-by .trusted-logo:hover{
+    transform: translateY(-4px);
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+@media (max-width: 640px){
+    #trusted-by{
+        padding: 2.75rem 5%;
+    }
+    #trusted-by .trusted-logo{
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+    }
+}
+
