@@ -12,7 +12,17 @@ body {
     direction: rtl;
     text-align: right;
 }
-
+#logo-link { display: inline-block; line-height: 0; }
+#site-logo {
+  width: 140px;       /* responsive: change to suit your layout */
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 6px; /* optional */
+}
+@media (max-width:640px){
+  #site-logo { width: 110px; }
+}
 /* =====================================
    HEADER & NAVIGATION
    ===================================== */
